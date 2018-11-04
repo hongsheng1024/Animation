@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AniRootViewController.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -21,13 +22,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _dataArrs = @[@"objc_msgSend发送消息", @"Runtime交换方法实现", @"动态添加方法",
-                  @"runtime取类的一些信息", @"关联对象给分类增加属性", @"KVC", @"KVO",
-                  @"Block介绍", @"WKWebView-协议拦截",@"WKWebView-WKScriptMessageHandler协议",
-                  @"WKWebView-WKUIDelegate协议",
-                  @"UIWebView-协议拦截",
-                  @"UIWebView-JavaScriptCore框架",
-                  @"UIWebView-JSExport协议"];
+    _dataArrs = @[@"基本动画平移-CABasicAnimation_position",
+                  @"基本动画缩放-CABasicAnimation_bounds",
+                  @"基本动画旋转-CABasicAnimation_transform",
+                  @"基本动画平移-通过transform（KVC）设置",
+                  @"关键帧动画-CAKeyframeAnimation",
+                  @"关键帧动画-用path让layer在指定路径移动",
+                  @"关键帧动画-图标抖动",
+                  @"转场动画",
+                  @"组动画",
+                  @"UIView封装动画",
+                  @"UIView封装的动画与CALayer动画的对比",
+                  @"position与anchorPoint"];
     
     _tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.dataSource = self;
@@ -52,7 +58,9 @@
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    AniRootViewController *aniVC = [[AniRootViewController alloc]init];
+    aniVC.atIndex = indexPath.row;
+    [self.navigationController pushViewController:aniVC animated:YES];
     
 }
 

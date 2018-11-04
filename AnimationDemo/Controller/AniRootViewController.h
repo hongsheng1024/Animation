@@ -10,4 +10,6 @@
 
 @interface AniRootViewController : UIViewController
 
+@property(nonatomic, assign)NSInteger atIndex;
+
 @end

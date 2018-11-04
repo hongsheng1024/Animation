@@ -15,6 +15,9 @@
 		1F194F032189AC7F001F911C /* AniRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F194EFE2189AC7F001F911C /* AniRootViewController.m */; };
 		1F194F042189AC7F001F911C /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F194F012189AC7F001F911C /* UIViewExt.m */; };
 		1F194F072189AC87001F911C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F194F052189AC87001F911C /* ViewController.m */; };
+		1F194F10218A8D37001F911C /* pic01.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F194F0D218A8D36001F911C /* pic01.png */; };
+		1F194F11218A8D37001F911C /* pic02.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F194F0E218A8D36001F911C /* pic02.png */; };
+		1F194F12218A8D37001F911C /* pic03.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F194F0F218A8D36001F911C /* pic03.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		1F194F022189AC7F001F911C /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		1F194F052189AC87001F911C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1F194F062189AC87001F911C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F194F0D218A8D36001F911C /* pic01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic01.png; sourceTree = "<group>"; };
+		1F194F0E218A8D36001F911C /* pic02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic02.png; sourceTree = "<group>"; };
+		1F194F0F218A8D36001F911C /* pic03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic03.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 				1F194F052189AC87001F911C /* ViewController.m */,
 				1F194EFD2189AC7F001F911C /* Controller */,
 				1F194F002189AC7F001F911C /* Untils */,
+				1F194F0B218A8D36001F911C /* Resource */,
 				1F194EED2189AC5A001F911C /* Main.storyboard */,
 				1F194EF02189AC5A001F911C /* Assets.xcassets */,
 				1F194EF22189AC5A001F911C /* LaunchScreen.storyboard */,
@@ -82,8 +89,8 @@
 		1F194EFD2189AC7F001F911C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1F194EFE2189AC7F001F911C /* AniRootViewController.m */,
 				1F194EFF2189AC7F001F911C /* AniRootViewController.h */,
+				1F194EFE2189AC7F001F911C /* AniRootViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -95,6 +102,24 @@
 				1F194F022189AC7F001F911C /* UIViewExt.h */,
 			);
 			path = Untils;
+			sourceTree = "<group>";
+		};
+		1F194F0B218A8D36001F911C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1F194F0C218A8D36001F911C /* Image */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1F194F0C218A8D36001F911C /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				1F194F0D218A8D36001F911C /* pic01.png */,
+				1F194F0E218A8D36001F911C /* pic02.png */,
+				1F194F0F218A8D36001F911C /* pic03.png */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +181,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F194EF42189AC5A001F911C /* LaunchScreen.storyboard in Resources */,
+				1F194F10218A8D37001F911C /* pic01.png in Resources */,
 				1F194EF12189AC5A001F911C /* Assets.xcassets in Resources */,
 				1F194EEF2189AC5A001F911C /* Main.storyboard in Resources */,
+				1F194F11218A8D37001F911C /* pic02.png in Resources */,
+				1F194F12218A8D37001F911C /* pic03.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
